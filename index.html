@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity: Unstyled DOM Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SITE HEADER / NAVIGATION -->
+    <header id="site-header">
+        <div class="brand-logo">DevPulse Academy</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#enroll" class="nav-cta">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <span class="badge">Fall 2026 Admissions Open</span>
+        <h1 class="hero-title">Master the Art of Web Architecture & Digital Media</h1>
+        <p class="hero-description">Gain hands-on expertise in modern front-end engineering, UI/UX systems, and production-grade software development through industry-aligned coursework.</p>
+        <div class="hero-actions">
+            <a href="#enroll" class="btn-primary">Explore Programs</a>
+            <a href="#curriculum" class="btn-secondary">View Curriculum</a>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="main-content">
+        
+        <!-- FEATURED COURSES SECTION -->
+        <section id="courses">
+            <h2 class="section-title">Featured Academic Track</h2>
+            <p class="section-subtitle">Comprehensive courses designed to take you from foundational syntax to cloud-ready applications.</p>
+            
+            <div class="card-grid">
+                <!-- Course Card 1 -->
+                <article class="course-card">
+                    <span class="category">Design Systems</span>
+                    <h3 class="card-title">Visual Hierarchy & Web Layouts</h3>
+                    <p class="card-text">Learn how to manipulate white space, typography, color contrast, and scanning patterns to build intuitive web interfaces.</p>
+                    <div class="card-meta">
+                        <span class="duration">8 Weeks</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+
+                <!-- Course Card 2 -->
+                <article class="course-card">
+                    <span class="category">Engineering</span>
+                    <h3 class="card-title">Full-Stack Web Architecture</h3>
+                    <p class="card-text">Master model-view-controller patterns, API integration, security protocols, and scalable database schema design.</p>
+                    <div class="card-meta">
+                        <span class="duration">12 Weeks</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+
+                <!-- Course Card 3 -->
+                <article class="course-card">
+                    <span class="category">Systems</span>
+                    <h3 class="card-title">Browser Engines & Performance</h3>
+                    <p class="card-text">Explore compilation pipelines, DOM tree execution, memory optimization, and low-level web rendering dynamics.</p>
+                    <div class="card-meta">
+                        <span class="duration">10 Weeks</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ANNOUNCEMENT / SIDEBAR CONTENT -->
+        <aside id="announcements">
+            <h3>Upcoming Campus Events</h3>
+            <ul>
+                <li>
+                    <strong>Sep 15:</strong> Web Performance Optimization Seminar
+                </li>
+                <li>
+                    <strong>Oct 02:</strong> UI/UX Portfolio Review Workshop
+                </li>
+                <li>
+                    <strong>Oct 20:</strong> Annual Student Hackathon
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="site-footer">
+        <p>&copy; 2026 DevPulse Academy. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Support</a></li>
+        </ul>
+    </footer>
+
+    <!-- DOCUMENTATION & REFLECTION SECTION (STUDENTS FILL THIS OUT) -->
+    <section id="student-documentation" style="margin-top: 50px; border-top: 2px dashed #ccc; padding-top: 20px;">
+        <h2>Student Visual Hierarchy Documentation</h2>
+        <p>Document the specific CSS strategies you implemented for at least 5 elements to establish visual hierarchy.</p>
+
+        <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Target Element / Class</th>
+                    <th style="width: 25%;">Hierarchy Principles Applied</th>
+                    <th style="width: 55%;">Implementation Details & Design Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+
+    <!-- EXAMPLE ROW 1 -->
+    <tr>
+        <td><code>.hero-title (h1)</code></td>
+        <td>Size & Scale</td>
+        <td>
+            Made the hero title the largest text on the page using 45px and bold font so it becomes the main point and immediately gets the users attention.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 1 -->
+    <tr>
+        <td><code>background-color: #efddc1;</code></td>
+        <td>Color and Contrast</td>
+        <td>
+            I used a different background color for the .course-card class to separate the course cards from the rest of the page and make them more noticeable.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 2 -->
+    <tr>
+        <td><code>font-family: Garamond, serif;</code></td>
+        <td>Typography Hierarchy</td>
+        <td>
+            I used Garamond as the main font of the website to give the page a consistent and more distinct appearance. I applied it to all elements using the * selector in styles.css.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 3 -->
+    <tr>
+        <td><code>grid-template-columns: repeat(3, 1fr);</code></td>
+        <td>Alignment and Grids</td>
+        <td>
+            I used grid-template-columns: repeat(3, 1fr) to create three equal columns for the course cards. The 1fr gives each column an equal share of the available space.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 4 -->
+    <tr>
+        <td><code>padding: 10px;</code></td>
+        <td>Negative Space (Whitespace)</td>
+        <td>
+            I used padding to create space between the content and the edges of the course cards so the text and other elements do not look crowded.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 5 -->
+    <tr>
+        <td><code>display: grid; gap: 20px;</code></td>
+        <td>Proximity and Grouping, Alignment and Grids</td>
+        <td>
+            I used display: grid to organize the course cards into a structured layout, while gap: 20px creates equal spacing between each card and helps separate the groups of content.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 6 -->
+    <tr>
+        <td><code>display: flex; justify-content: space-between;</code></td>
+        <td>Reading Patterns</td>
+        <td>
+            I used flexbox and space-between in the site header to place the logo on the upper-left side and the navigation on the upper-right side. Together with the hero content below, this supports a Z-pattern that guides the user's eyes across the page and toward the main content.
+        </td>
+    </tr>
+
+</tbody>
+        </table>
+    </section>
+
+</body>
+</html>
